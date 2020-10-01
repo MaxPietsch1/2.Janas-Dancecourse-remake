@@ -1,0 +1,131 @@
+.video-image-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.video-wrapper {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 70vh;
+
+  .video-info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 1rem 0;
+    justify-content: center;
+
+    h3 {
+      font-size: 3rem;
+      color: $mainColor;
+      text-shadow: 1px 1px 1.5px black;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.image-background {
+  text-align: end;
+  padding-top: 6rem;
+  background: black;
+  color: $mainColor;
+
+  h4 {
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    max-width: 1300px;
+  }
+}
+
+.image {
+  display: flex;
+  padding: 0rem 0 6rem 4rem;
+  background: black;
+  color: white;
+
+
+
+  .image-header {
+    background: #202020;
+    color: $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 10rem;
+    border-right: 10px solid white;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+
+  .image-boxes {
+    overflow-x: auto;
+    // min-width: 100%;
+
+    .image-box1 {
+      border-right: 10px solid white;
+      display: flex;
+
+      .item {
+        min-width: 25rem;
+        min-height: 15rem;
+        // width: 30rem;
+        // height: 20rem;
+        background-size: cover;
+        background-position: center;
+
+        .img-btn {
+          opacity: 0;
+          font-size: 1rem;
+          font-weight: bolder;
+          background: rgba(0, 0, 0, 0.5);
+          border: 1px solid white;
+          margin: 2%;
+          border-radius: 1ch;
+          padding: 0.5vw;
+          color: white;
+
+
+          &:hover {
+            background: rgb(255, 255, 255);
+            color: black;
+            border-color: black;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+// Adding from Javascript
+.enlarged {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 21;
+
+}
+
+.visible {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.background-enlarged {
+  position: fixed;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.824);
+  z-index: 20;
+
+}

@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.logo {
+  a {
+    text-decoration: none;
+    color: $mainColor;
+
+  }
+}
