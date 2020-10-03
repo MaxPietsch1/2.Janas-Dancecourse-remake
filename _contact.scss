@@ -19,6 +19,7 @@
   // height: 400px;
   padding: 2rem 0 5rem 0;
   width: 1600px;
+  text-align: center;
 
   h1 {
     font-size: 4rem;
@@ -34,9 +35,14 @@
   a {
     font-size: 1.6rem;
     line-height: 20px;
+    color: #8ff2ff;
   }
 
-  a {
-    color: #8ff2ff;
+  h3 {
+
+    a {
+      color: white;
+      font-weight: normal;
+    }
   }
 }
