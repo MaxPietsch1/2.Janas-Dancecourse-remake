@@ -5,7 +5,7 @@ html {
 .intro {
   max-width: 1300px;
   margin: auto;
-  min-height: 52vh;
+  min-height: 49.5vh;
   // min-height: 40vh;
   max-height: 78vh;
   display: flex;
@@ -255,14 +255,16 @@ footer {
   }
 
   .social {
+
     img {
+      transition: all 0.3s ease;
       max-width: 28px;
       border-radius: 1.5ch;
       margin: 0.5rem 1rem 0 1rem;
 
       &:hover {
         transform: scale(1.2);
-        box-shadow: 0px 0px 10px rgb(75, 75, 75);
+        // box-shadow: 0px 0px 10px rgb(75, 75, 75);
       }
     }
   }

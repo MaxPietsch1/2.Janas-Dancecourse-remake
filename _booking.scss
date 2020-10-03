@@ -41,6 +41,7 @@
 
     h2 {
       font-size: 16px;
+      font-weight: normal;
       line-height: 110%;
       letter-spacing: 2px;
       color: white;
@@ -64,7 +65,7 @@
   margin: auto;
 
   h3 {
-    font-size: 16px;
+    font-size: 3rem;
     text-align: center;
     border-bottom: 1.5px solid white;
     margin-bottom: 1rem;
@@ -81,7 +82,7 @@
         sans-serif;
       display: flex;
       align-items: center;
-      font-size: 12px;
+      font-size: 16px;
       color: #e2e1e1;
       padding: 0 1rem;
 
@@ -89,6 +90,12 @@
         img {
           height: 20px;
           padding-right: 4px;
+          margin-top: 4px;
+          border-radius: 50%;
+
+          &:hover {
+            color: red;
+          }
         }
       }
 

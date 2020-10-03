@@ -39,6 +39,7 @@
   color: $mainColor;
 
   h4 {
+    margin: auto;
     padding-right: 1rem;
     font-size: 1.5rem;
     max-width: 1300px;
@@ -47,9 +48,11 @@
 
 .image {
   display: flex;
-  padding: 0rem 0 6rem 4rem;
-  background: black;
+  padding: 0rem 0 6rem 0rem;
+  background: rgb(20, 20, 20);
   color: white;
+  max-width: 1300px;
+  margin: auto;
 
 
 

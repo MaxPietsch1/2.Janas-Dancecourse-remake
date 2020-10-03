@@ -27,7 +27,7 @@ html {
 .intro {
   max-width: 1300px;
   margin: auto;
-  min-height: 52vh;
+  min-height: 49.5vh;
   max-height: 78vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,6 +321,8 @@ footer .header h2 {
 }
 
 footer .social img {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   max-width: 28px;
   border-radius: 1.5ch;
   margin: 0.5rem 1rem 0 1rem;
@@ -329,8 +331,6 @@ footer .social img {
 footer .social img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-box-shadow: 0px 0px 10px #4b4b4b;
-          box-shadow: 0px 0px 10px #4b4b4b;
 }
 
 @media screen and (max-width: 860px) {
@@ -657,6 +657,7 @@ footer .social img:hover {
 }
 
 .image-background h4 {
+  margin: auto;
   padding-right: 1rem;
   font-size: 1.5rem;
   max-width: 1300px;
@@ -666,9 +667,11 @@ footer .social img:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0rem 0 6rem 4rem;
-  background: black;
+  padding: 0rem 0 6rem 0rem;
+  background: #141414;
   color: white;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .image .image-header {
@@ -796,6 +799,7 @@ footer .social img:hover {
 
 .book-us-info .book-us-alternative h2 {
   font-size: 16px;
+  font-weight: normal;
   line-height: 110%;
   letter-spacing: 2px;
   color: white;
@@ -825,7 +829,7 @@ footer .social img:hover {
 }
 
 .bookus-contact h3 {
-  font-size: 16px;
+  font-size: 3rem;
   text-align: center;
   border-bottom: 1.5px solid white;
   margin-bottom: 1rem;
@@ -851,7 +855,7 @@ footer .social img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 12px;
+  font-size: 16px;
   color: #e2e1e1;
   padding: 0 1rem;
 }
@@ -859,6 +863,12 @@ footer .social img:hover {
 .bookus-contact .bookus-contact-links h4 span img {
   height: 20px;
   padding-right: 4px;
+  margin-top: 4px;
+  border-radius: 50%;
+}
+
+.bookus-contact .bookus-contact-links h4 span img:hover {
+  color: red;
 }
 
 .bookus-contact .bookus-contact-links h4 a {
@@ -1182,9 +1192,6 @@ a.active {
 }
 
 @media screen and (min-width: 1100px) {
-  .image-background h4 {
-    display: none;
-  }
   .contact-info h1 {
     font-size: 5rem;
   }
