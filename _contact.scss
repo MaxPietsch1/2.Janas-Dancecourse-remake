@@ -31,18 +31,57 @@
     padding-top: 2rem;
   }
 
-  h3,
-  a {
-    font-size: 1.6rem;
-    line-height: 20px;
-    color: #8ff2ff;
-  }
+  // h3 {
+  //   font-size: 1.6rem;
+  //   line-height: 20px;
+  //   color: #ffffff;
+  //   text-decoration: none;
+  // }
 
-  h3 {
+
+
+  // a {
+  //   font-size: 1.6rem;
+  //   line-height: 20px;
+  //   letter-spacing: 1.5px;
+  //   color: rgb(253, 207, 101);
+  //   text-decoration: underline;
+
+  //   &:hover {
+  //     color: rgb(63, 222, 236);
+  //   }
+  // }
+
+  span {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 
     a {
-      color: white;
-      font-weight: normal;
+      font-size: 16px;
+      color: rgb(253, 207, 101);
+      text-decoration: none;
+      letter-spacing: 2px;
+      line-height: 1px;
+      font-family: "montserrat";
+
+      
+      img {
+        margin-right:7px;
+        height: 24px;
+        width: 29px;
+      }
+      &:hover {
+        color: rgb(63, 222, 236);
+      }
+    }
+  }
+  h3 {
+    padding-top: 2px;
+    a {
+      color: rgb(253, 207, 101);
+      text-decoration: underline;
+      // line-height: 20px;
     }
   }
 }

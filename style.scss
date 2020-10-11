@@ -1,5 +1,6 @@
-$mainColor: #ffb005;
-// $mainColor: #6ad7e3;
+// $mainColor: #ffb005; first main color
+$mainColor: #e4a929;
+
 
 @import "global";
 @import "intro";
@@ -16,6 +17,7 @@ $mainColor: #ffb005;
     .enlarged {
         width: 320px;
         height: 250px;
+        border: 5px solid white;
     }
 }
 
@@ -30,25 +32,25 @@ $mainColor: #ffb005;
 @media screen and (min-width: 500px) {
     .enlarged {
         width: 500px;
-        height: 350px;
+        height: 380px;
     }
 }
 
 @media screen and (min-width: 750px) {
     .enlarged {
         width: 735px;
-        height: 500px;
+        height: 560px;
     }
 }
 
 @media screen and (min-width: 1100px) {
     .enlarged {
         width: 1000px;
-        height: 600px;
+        height: 800px;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 386px) {
 
     // Video section
     .video-wrapper {
@@ -56,12 +58,16 @@ $mainColor: #ffb005;
             min-width: 96%;
             margin: auto;
 
-            h3 {
-                font-size: 2.9rem;
+            h2 {
+                font-size: 2.557rem;
+                padding-bottom: 2px;
             }
 
             h4 {
                 font-size: 1.6rem;
+            }
+            span{
+                font-size: 2rem;
             }
         }
     }
@@ -125,24 +131,15 @@ $mainColor: #ffb005;
         .book-us-alternative {
             h2 {
                 font-size: 1.9rem;
+                span{
+                    font-size: 1.9rem;
+
+                 }
             }
         }
     }
 }
 
-// @media screen and (max-width: 861px) {
-//     .bookus-contact {
-//         .bookus-contact-links {
-//             h4 {
-//                 font-size: 15px;
-
-//                 a {
-//                     font-size: 15px;
-//                 }
-//             }
-//         }
-//     }
-// }
 
 @media screen and (max-width: 1130px) {
     .video-wrapper {
@@ -161,25 +158,31 @@ $mainColor: #ffb005;
 }
 
 @media screen and (min-width: 1100px) {
-    // .image-background {
-    //     h4 {
-    //         display: none;
-    //     }
-    // }
+    .image-background {
+        h4 {
+            display: none;
+        }
+    }
 
     .contact-info {
         h1 {
-            font-size: 5rem;
+            font-size: 40px;
 
         }
 
         h2 {
-            font-size: 3rem;
+            font-size: 28px;
         }
 
-        h3,
-        a {
-            font-size: 2.4rem;
+        span{
+            a{
+                font-size: 18px;
+
+                img{
+                    height: 30px;
+                    width: 36px;
+                }
+            }
         }
     }
 }

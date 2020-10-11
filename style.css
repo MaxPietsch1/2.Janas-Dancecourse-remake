@@ -17,17 +17,17 @@ html {
 
 .logo a {
   text-decoration: none;
-  color: #ffb005;
+  color: #e4a929;
 }
 
 html {
-  background: white;
+  background: rgba(159, 159, 159, 0.5);
 }
 
 .intro {
   max-width: 1300px;
   margin: auto;
-  min-height: 49.5vh;
+  min-height: 60vh;
   max-height: 78vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,9 +63,10 @@ html {
 
 .intro .dancegroup2 {
   border: 2px solid white;
-  background: url("./images/group-fists.jpeg");
+  background: url("./images/streetdance-girls-2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position-y: 45%;
+  background-position-x: center;
   width: 100%;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
@@ -125,7 +126,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 15vh;
+  height: 13vh;
   background: rgba(0, 0, 0, 0.08);
   max-width: 1300px;
   width: 100%;
@@ -151,7 +152,7 @@ html {
   text-align: center;
   font-size: 4.5rem;
   font-family: "Anton", sans-serif;
-  color: #ffb005;
+  color: #e4a929;
   text-shadow: 2px 4px 1px black, 2px 4px 5px black, 2px 4px 1px black, 2px 4px 2px black;
   letter-spacing: 0.5rem;
   font-variant: small-caps;
@@ -186,7 +187,7 @@ html {
 
 .intro-information h2 span {
   font-size: 2.3rem;
-  color: #ffb005;
+  color: #e4a929;
   text-shadow: 0.5px 0.5px black;
 }
 
@@ -197,12 +198,6 @@ html {
   font-weight: normal;
   line-height: 2.5rem;
   padding: 1rem 0;
-}
-
-.intro-information p span,
-.intro-information h3 span {
-  color: #ffb005;
-  text-shadow: 0.5px 0.5px black;
 }
 
 .intro-information .mittwoch,
@@ -217,11 +212,24 @@ html {
           align-items: center;
   padding: 2rem;
   text-align: center;
+  background-color: #efefef;
+}
+
+.intro-information .mittwoch span,
+.intro-information .payment span,
+.intro-information .age span,
+.intro-information .donnerstag span {
+  color: #eea301;
+  text-shadow: 0.5px 0.5px black;
+}
+
+.intro-information .donnerstag, .intro-information .age {
+  border-top: 1px solid black;
 }
 
 .intro-information .mittwoch,
 .intro-information .payment {
-  background: #e2e2e2;
+  border-top: 1px solid black;
 }
 
 .intro-information .mittwoch h2,
@@ -376,31 +384,33 @@ footer .social img:hover {
   .intro-information .payment h2,
   .intro-information .age h2,
   .intro-information .donnerstag h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .intro-information .mittwoch h2 span,
   .intro-information .payment h2 span,
   .intro-information .age h2 span,
   .intro-information .donnerstag h2 span {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .intro-information .mittwoch h3,
   .intro-information .payment h3,
   .intro-information .age h3,
   .intro-information .donnerstag h3 {
     font-size: 1.8rem;
+    padding-top: 5px;
   }
   .intro-information .mittwoch p,
   .intro-information .payment p,
   .intro-information .age p,
   .intro-information .donnerstag p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    padding-top: 5px;
   }
   .intro-information .mittwoch a,
   .intro-information .payment a,
   .intro-information .age a,
   .intro-information .donnerstag a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -424,7 +434,7 @@ footer .social img:hover {
   font-size: 3.5rem;
   text-align: center;
   padding-top: 2rem;
-  color: #ffb005;
+  color: #e4a929;
   text-shadow: 1px 1px 1px black;
   letter-spacing: 0.5rem;
   font-variant: small-caps;
@@ -439,7 +449,8 @@ footer .social img:hover {
 }
 
 .about-image {
-  width: 30rem;
+  width: 100%;
+  max-width: 40rem;
   height: 50rem;
   margin: 1rem 2rem 0rem 0rem;
   float: left;
@@ -455,11 +466,11 @@ footer .social img:hover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: translateX(250px);
-          transform: translateX(250px);
+  -webkit-transform: translateX(91%);
+          transform: translateX(91%);
   -webkit-transition: 0.4s all ease;
   transition: 0.4s all ease;
-  background: url("./images/janasea2.jpeg");
+  background: url("./images/janasea3.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -485,7 +496,15 @@ footer .social img:hover {
 }
 
 .about-image .about-image2 span i {
-  padding: 1.5rem;
+  padding: 3rem 1rem;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.about-image .about-image2 span i:hover {
+  color: #efefef;
 }
 
 .about-image .img-active {
@@ -573,11 +592,12 @@ footer .social img:hover {
   color: white;
   padding: 2rem 0 5rem 0;
   width: 1600px;
+  text-align: center;
 }
 
 .contact-info h1 {
   font-size: 4rem;
-  color: #ffb005;
+  color: #e4a929;
 }
 
 .contact-info h2 {
@@ -585,14 +605,43 @@ footer .social img:hover {
   padding-top: 2rem;
 }
 
-.contact-info h3,
-.contact-info a {
-  font-size: 1.6rem;
-  line-height: 20px;
+.contact-info span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.contact-info a {
-  color: #8ff2ff;
+.contact-info span a {
+  font-size: 16px;
+  color: #fdcf65;
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 1px;
+  font-family: "montserrat";
+}
+
+.contact-info span a img {
+  margin-right: 7px;
+  height: 24px;
+  width: 29px;
+}
+
+.contact-info span a:hover {
+  color: #3fdeec;
+}
+
+.contact-info h3 {
+  padding-top: 2px;
+}
+
+.contact-info h3 a {
+  color: #fdcf65;
+  text-decoration: underline;
 }
 
 .video-image-gallery {
@@ -621,7 +670,7 @@ footer .social img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 70vh;
+  min-height: 60vh;
 }
 
 .video-wrapper .video-info {
@@ -633,15 +682,15 @@ footer .social img:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 40%;
-  margin: 1rem 0;
+  margin: 3rem 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.video-wrapper .video-info h3 {
-  font-size: 3rem;
-  color: #ffb005;
+.video-wrapper .video-info h2 {
+  font-size: 2.9rem;
+  color: #e4a929;
   text-shadow: 1px 1px 1.5px black;
 }
 
@@ -649,11 +698,17 @@ footer .social img:hover {
   font-size: 2rem;
 }
 
+.video-wrapper .video-info span {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: "roboto";
+}
+
 .image-background {
   text-align: end;
   padding-top: 6rem;
   background: black;
-  color: #ffb005;
+  color: #e4a929;
 }
 
 .image-background h4 {
@@ -663,12 +718,15 @@ footer .social img:hover {
   max-width: 1300px;
 }
 
+.image-background h4 span {
+  font-size: 2rem;
+}
+
 .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0rem 0 6rem 0rem;
-  background: #141414;
   color: white;
   max-width: 1300px;
   margin: auto;
@@ -676,7 +734,7 @@ footer .social img:hover {
 
 .image .image-header {
   background: #202020;
-  color: #ffb005;
+  color: #e4a929;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,25 +751,40 @@ footer .social img:hover {
 }
 
 .image .image-boxes {
-  overflow-x: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border-right: 5px solid white;
 }
 
 .image .image-boxes .image-box1 {
-  border-right: 10px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  overflow-y: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
 .image .image-boxes .image-box1 .item {
-  min-width: 25rem;
-  min-height: 15rem;
-  background-size: cover;
-  background-position: center;
+  min-width: 30rem;
+  max-width: 100rem;
+  max-height: 100%;
+}
+
+.image .image-boxes .image-box1 .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  pointer-events: none;
 }
 
 .image .image-boxes .image-box1 .item .img-btn {
-  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
   font-size: 1rem;
   font-weight: bolder;
   background: rgba(0, 0, 0, 0.5);
@@ -735,6 +808,9 @@ footer .social img:hover {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 21;
+  border-radius: 5px;
+  height: 100%;
+  margin: auto;
 }
 
 .visible {
@@ -769,7 +845,7 @@ footer .social img:hover {
 .book-us-info-wrapper h1 {
   text-align: center;
   font-size: 4rem;
-  color: #ffb005;
+  color: #e4a929;
   padding-top: 1rem;
 }
 
@@ -789,8 +865,7 @@ footer .social img:hover {
 .book-us-info h3 {
   margin: auto;
   font-size: 16px;
-  font-weight: lighter;
-  color: #eeeeee;
+  color: #c2c2c2;
 }
 
 .book-us-info .book-us-alternative {
@@ -798,11 +873,14 @@ footer .social img:hover {
 }
 
 .book-us-info .book-us-alternative h2 {
-  font-size: 16px;
   font-weight: normal;
   line-height: 110%;
   letter-spacing: 2px;
-  color: white;
+  color: #c2c2c2;
+}
+
+.book-us-info .book-us-alternative h2 span {
+  font-size: 16px;
 }
 
 .bookus-contact-wrapper {
@@ -882,6 +960,19 @@ footer .social img:hover {
   color: #00E5FF;
 }
 
+.bookus-contact .bookus-contact-links #book-email a {
+  font-family: "Open Sans",sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: #e2e1e1;
+  color: #ffbd43;
+}
+
 header {
   background: #171717;
 }
@@ -911,7 +1002,7 @@ nav {
 }
 
 .logo h4 {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .nav-links {
@@ -941,11 +1032,11 @@ nav {
   text-decoration: none;
   letter-spacing: 0.3rem;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .nav-links a:hover {
-  color: #ffb005;
+  color: #e4a929;
 }
 
 a.active {
@@ -1084,6 +1175,7 @@ a.active {
   .enlarged {
     width: 320px;
     height: 250px;
+    border: 5px solid white;
   }
 }
 
@@ -1097,34 +1189,38 @@ a.active {
 @media screen and (min-width: 500px) {
   .enlarged {
     width: 500px;
-    height: 350px;
+    height: 380px;
   }
 }
 
 @media screen and (min-width: 750px) {
   .enlarged {
     width: 735px;
-    height: 500px;
+    height: 560px;
   }
 }
 
 @media screen and (min-width: 1100px) {
   .enlarged {
     width: 1000px;
-    height: 600px;
+    height: 800px;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 386px) {
   .video-wrapper .video-info {
     min-width: 96%;
     margin: auto;
   }
-  .video-wrapper .video-info h3 {
-    font-size: 2.9rem;
+  .video-wrapper .video-info h2 {
+    font-size: 2.557rem;
+    padding-bottom: 2px;
   }
   .video-wrapper .video-info h4 {
     font-size: 1.6rem;
+  }
+  .video-wrapper .video-info span {
+    font-size: 2rem;
   }
 }
 
@@ -1173,6 +1269,9 @@ a.active {
   .book-us-info-wrapper .book-us-alternative h2 {
     font-size: 1.9rem;
   }
+  .book-us-info-wrapper .book-us-alternative h2 span {
+    font-size: 1.9rem;
+  }
 }
 
 @media screen and (max-width: 1130px) {
@@ -1192,15 +1291,21 @@ a.active {
 }
 
 @media screen and (min-width: 1100px) {
+  .image-background h4 {
+    display: none;
+  }
   .contact-info h1 {
-    font-size: 5rem;
+    font-size: 40px;
   }
   .contact-info h2 {
-    font-size: 3rem;
+    font-size: 28px;
   }
-  .contact-info h3,
-  .contact-info a {
-    font-size: 2.4rem;
+  .contact-info span a {
+    font-size: 18px;
+  }
+  .contact-info span a img {
+    height: 30px;
+    width: 36px;
   }
 }
 /*# sourceMappingURL=style.css.map */
