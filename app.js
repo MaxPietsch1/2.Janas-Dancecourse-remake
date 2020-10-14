@@ -48,25 +48,3 @@ for (let i = 0; i < images.length; i++) {
     }
   })
 }
-
-// intro page
-// const introArrow = document.getElementsByClassName("intro-arrow");
-// const groupimg2 = document.getElementsByClassName("dancegroup2");
-// // const childArrow = introArrow[0].children[0];
-
-// // console.log(childArrow);
-
-// introArrow[0].addEventListener("click", function () {
-//   groupimg2[0].classList.toggle("dancegroup2-active");
-//   // console.log(childArrow.classList.toggle("intro-arrow-active"));
-// });
-
-
-// About page
-// const img2 = document.getElementsByClassName("about-image2");
-// const leftArrow = document.getElementsByClassName("fas fa-angle-left");
-
-// leftArrow[0].addEventListener("click", function () {
-//   img2[0].classList.toggle("img-active");
-//   leftArrow[0].parentNode.classList.toggle("arrow-active");
-// });
