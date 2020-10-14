@@ -42,12 +42,12 @@ html {
     transition: 0.3s all ease;
     z-index: 1;
     transform: translate(70%, 90%);
-    overflow: hidden;
+    overflow-x: hidden;
 
     .intro-arrow {
-      position: absolute;
+      position: relative;
     }
-
+    
     i {
       position: absolute;
       top: -30px;

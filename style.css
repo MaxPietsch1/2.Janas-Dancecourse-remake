@@ -73,11 +73,11 @@ html {
   z-index: 1;
   -webkit-transform: translate(70%, 90%);
           transform: translate(70%, 90%);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .intro .dancegroup2 .intro-arrow {
-  position: absolute;
+  position: relative;
 }
 
 .intro .dancegroup2 i {
