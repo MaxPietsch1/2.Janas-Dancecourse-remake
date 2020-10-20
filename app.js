@@ -48,3 +48,16 @@ for (let i = 0; i < images.length; i++) {
     }
   })
 }
+
+
+
+// popup IE
+if(navigator.userAgent.indexOf('MSIE')!==-1
+|| navigator.appVersion.indexOf('Trident/') > -1){
+   /* Microsoft Internet Explorer detected in. */
+  const popup = document.querySelector("#popup");
+  const website = document.querySelector("#website");
+
+  popup.style.display = "block";
+  website.style.display = "none";
+}
