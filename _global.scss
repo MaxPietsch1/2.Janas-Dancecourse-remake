@@ -23,36 +23,60 @@ html {
   }
 }
 
-#popup{
+.popup{
   height: 100vh;
-  display: flex;
-  background: linear-gradient(rgb(18, 17, 17), rgb(37, 37, 37)), rgb(44, 36, 36);
+  display: none;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+
   
     .popup-text{
+      padding: 30px 0px;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-items: center;
       flex-direction: column;
       background-color: white;
       margin: auto;
-      min-width: 700px;
+      max-width: 700px;
       min-height: 500px;
       box-shadow: 10px 0px 5px rgba(0, 0, 0, 0.601), 0px 10px 20px rgba(0, 0, 0, 0.477);
-      background: linear-gradient(45deg, #ff7e5f, #feb47b);
       border-radius: 2rem;
       
       h5{
         text-align: center;
           font-size: 32px;
+          font-family: 'dosis';
           font-variant: small-caps;
           margin: auto;
-          color: rgb(255, 0, 0);
-          text-shadow: 1px 1px 1px black;
+          color: rgb(251, 93, 49);
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.493),
+          1px 2px 1px rgba(102, 102, 102, 0.493);
+          letter-spacing: 2px;
+        }
+        h3{
+          font-size: 100px;
+          color: yellow;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 1), -1px 1px 2px rgba(0, 0, 0, 0.5);
           
         }
         p{
           font-size: 18px;
           color: rgb(1, 1, 1);
         }
+        span{
+          color: red;
+          font-family: 'dosis';
+          font-size: 20px;
+          font-weight: bolder;
+          letter-spacing: 2px;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        }
+        strong{
+          font-size: 19px;
+        }
     }
+}
+
+.show-popup{
+  display: block;
 }
