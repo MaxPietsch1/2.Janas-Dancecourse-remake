@@ -19,7 +19,8 @@
   padding: 2rem 2rem 0rem 2rem;
 
   p {
-    font-size: 2rem;
+    // font-size: 2rem;
+    font-size: $p-graph;
   }
 }
 
@@ -29,7 +30,7 @@
   height: 50rem;
   margin: 1rem 2rem 0rem 0rem;
   float: left;
-  background: url("./images/janasea1.jpeg");
+  background: url("./images/janasea1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,8 +42,8 @@
     object-fit: cover;
     transform: translateX(91%);
     transition: 0.4s all ease;
-    background: url("./images/janasea3.jpeg");
-    background-position: center;
+    background: url("./images/janasea3.jpg");
+    background-position-x: 40%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -62,7 +63,7 @@
         border-radius: 50%;
         transition: all 0.2s ease;
         cursor: pointer;
-        &:hover{
+        &:hover {
           color: rgb(239, 239, 239);
         }
       }
@@ -71,11 +72,11 @@
 
   .img-active {
     transform: translateX(0px);
-    transform: rotate(-20deg);
+    // transform: rotate(-20deg);
   }
 
   .arrow-active {
-    transform: rotate(-160deg);
+    transform: rotate(-180deg);
     margin-left: auto;
   }
 }
@@ -113,9 +114,8 @@
     padding: 0;
 
     p {
-      font-size: 1.8rem;
+      // font-size: 1.8rem;
       padding: 0 2rem;
     }
-
   }
 }

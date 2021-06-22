@@ -1,5 +1,8 @@
 $mainColor: #e4a929;
-
+$h2-text: calc(18px + 0.5vw);
+$p-graph: calc(12px + 0.5vw);
+$p2-graph: calc(10px + 0.2vw);
+$navbar-text: calc(12px + 0.2vw);
 
 @import "global";
 @import "intro";
@@ -9,177 +12,168 @@ $mainColor: #e4a929;
 @import "booking";
 @import "navbar";
 
-
-
-
 @media screen and (min-width: 310px) {
-    .enlarged {
-        width: 320px;
-        height: 250px;
-        border: 5px solid white;
-    }
+  .enlarged {
+    width: 320px;
+    height: 250px;
+    border: 5px solid white;
+  }
 }
 
 @media screen and (min-width: 360px) {
-    .enlarged {
-        width: 360px;
-        height: 290px;
-    }
+  .enlarged {
+    width: 360px;
+    height: 290px;
+  }
 }
 
-
 @media screen and (min-width: 500px) {
-    .enlarged {
-        width: 500px;
-        height: 380px;
-    }
+  .enlarged {
+    width: 500px;
+    height: 380px;
+  }
 }
 
 @media screen and (min-width: 750px) {
-    .enlarged {
-        width: 735px;
-        height: 560px;
-    }
+  .enlarged {
+    width: 735px;
+    height: 560px;
+  }
 }
 
 @media screen and (min-width: 1100px) {
-    .enlarged {
-        width: 1000px;
-        height: 800px;
-    }
+  .enlarged {
+    width: 1000px;
+    height: 800px;
+  }
 }
 
 @media screen and (max-width: 386px) {
+  // Video section
+  .video-wrapper {
+    .video-info {
+      min-width: 96%;
+      margin: auto;
 
-    // Video section
-    .video-wrapper {
-        .video-info {
-            min-width: 96%;
-            margin: auto;
+      h2 {
+        font-size: 2.557rem;
+        padding-bottom: 2px;
+      }
 
-            h2 {
-                font-size: 2.557rem;
-                padding-bottom: 2px;
-            }
-
-            h4 {
-                font-size: 1.6rem;
-            }
-            span{
-                font-size: 2rem;
-            }
-        }
+      h4 {
+        font-size: 1.6rem;
+      }
+      span {
+        font-size: 2rem;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 480px) {
+  // Image section
+  .morePhotos {
+    padding-top: 2rem;
+  }
 
-    // Image section
-    .morePhotos {
-        padding-top: 2rem;
+  .image {
+    padding: 0 0 3rem 2rem;
+
+    .image-header {
+      min-width: 4rem;
+      border-right: 5px solid white;
+
+      h2 {
+        transform: rotateZ(-90deg);
+      }
     }
 
-    .image {
-        padding: 0 0 3rem 2rem;
+    .image-boxes {
+      overflow-x: auto;
 
-        .image-header {
-            min-width: 4rem;
-            border-right: 5px solid white;
+      .image-box1 {
+        min-height: 15rem;
 
-            h2 {
-                transform: rotateZ(-90deg);
-            }
+        .item {
+          min-width: 20rem;
+          background-size: cover;
+          background-position: center;
         }
-
-        .image-boxes {
-            overflow-x: auto;
-
-            .image-box1 {
-                min-height: 15rem;
-
-                .item {
-                    min-width: 20rem;
-                    background-size: cover;
-                    background-position: center;
-                }
-            }
-        }
+      }
     }
+  }
 }
 
-
 @media screen and (max-width: 680px) {
-    .video-wrapper {
-        iframe {
-            max-width: 100%;
-            height: 25rem;
-        }
+  .video-wrapper {
+    iframe {
+      max-width: 100%;
+      height: 25rem;
     }
+  }
 }
 
 @media screen and (min-width: 861px) {
-    .book-us-info-wrapper {
-        h1 {
-            font-size: 5rem;
-        }
-
-        h3 {
-            font-size: 1.8rem;
-        }
-
-        .book-us-alternative {
-            h2 {
-                font-size: 1.9rem;
-                span{
-                    font-size: 1.9rem;
-                }
-            }
-        }
+  .book-us-info-wrapper {
+    h1 {
+      font-size: 5rem;
     }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    .book-us-alternative {
+      h2 {
+        font-size: 1.9rem;
+        span {
+          font-size: 1.9rem;
+        }
+      }
+    }
+  }
 }
 
-
 @media screen and (max-width: 1130px) {
-    .video-wrapper {
-        flex-direction: column;
+  .video-wrapper {
+    flex-direction: column;
 
-        .video-info {
-            width: 90%;
-            padding: 2rem 0 3rem 0;
-        }
-
-        .video {
-            margin-bottom: 5rem;
-        }
+    .video-info {
+      width: 90%;
+      padding: 2rem 0 3rem 0;
     }
+
+    .video {
+      margin-bottom: 5rem;
+    }
+  }
 }
 
 @media screen and (min-width: 1100px) {
-    .image-background {
-        h4 {
-            display: none;
-        }
+  .image-background {
+    h4 {
+      display: none;
+    }
+  }
+
+  .contact-info {
+    h1 {
+      font-size: 40px;
     }
 
-    .contact-info {
-        h1 {
-            font-size: 40px;
-
-        }
-
-        h2 {
-            font-size: 28px;
-        }
-
-        span{
-            a{
-                font-size: 18px;
-
-                img{
-                    height: 30px;
-                    width: 36px;
-                }
-            }
-        }
+    h2 {
+      font-size: 28px;
     }
+
+    span {
+      a {
+        font-size: 18px;
+
+        img {
+          height: 30px;
+          width: 36px;
+        }
+      }
+    }
+  }
 }

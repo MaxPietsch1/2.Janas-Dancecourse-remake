@@ -88,8 +88,8 @@ html {
   display: block;
 }
 
-html {
-  background: rgba(159, 159, 159, 0.5);
+#website {
+  background-color: #e6e6e6;
 }
 
 .intro {
@@ -123,7 +123,7 @@ html {
   left: 0;
   color: white;
   background: black;
-  font-size: 1.2rem;
+  font-size: calc(10px + 0.2vw);
   padding: 0 1rem;
   border-top-right-radius: 1rem;
   letter-spacing: 1px;
@@ -146,7 +146,7 @@ html {
 
 .intro .dancegroup2 .intro-arrow {
   display: inline-block;
-  background: linear-gradient(50deg, orange 20%, white);
+  background: linear-gradient(50deg, #e4a929 75%, white);
   border-right: 1.5px solid white;
   border-bottom: 1.5px solid white;
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -173,7 +173,7 @@ html {
 .intro .dancegroup2 p {
   color: white;
   background: black;
-  font-size: 1.2rem;
+  font-size: calc(10px + 0.2vw);
   padding: 0 1rem;
   border-top-left-radius: 1rem;
   letter-spacing: 1px;
@@ -192,7 +192,6 @@ html {
   display: -ms-flexbox;
   display: flex;
   height: 13vh;
-  background: rgba(0, 0, 0, 0.08);
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
@@ -231,13 +230,13 @@ html {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   background: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   max-width: 1300px;
   margin: auto;
 }
 
 .intro-information a {
-  color: black;
+  color: #151515;
 }
 
 .intro-information a:hover {
@@ -246,22 +245,23 @@ html {
 
 .intro-information h2 {
   color: black;
-  font-size: 2.3rem;
+  font-size: calc(18px + 0.5vw);
   line-height: 25px;
 }
 
 .intro-information h2 span {
-  font-size: 2.3rem;
   color: #e4a929;
-  text-shadow: 0.5px 0.5px black;
+  text-shadow: 0.2px 0.2px black;
 }
 
-.intro-information p,
+.intro-information p {
+  font-size: calc(12px + 0.5vw);
+  color: #151515;
+}
+
 .intro-information h3 {
-  font-size: 2rem;
   color: black;
   font-weight: normal;
-  line-height: 2.5rem;
   padding: 1rem 0;
 }
 
@@ -275,9 +275,8 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
+  padding: 3rem;
   text-align: center;
-  background-color: #efefef;
 }
 
 .intro-information .mittwoch span,
@@ -285,27 +284,17 @@ html {
 .intro-information .age span,
 .intro-information .donnerstag span {
   color: #eea301;
-  text-shadow: 0.5px 0.5px black;
+  text-shadow: 0.2px 0.2px black;
 }
 
-.intro-information .donnerstag, .intro-information .age {
-  border-top: 1px solid black;
+.intro-information .donnerstag,
+.intro-information .age {
+  border-top: 1px solid #e6e6e6;
 }
 
 .intro-information .mittwoch,
 .intro-information .payment {
-  border-top: 1px solid black;
-}
-
-.intro-information .mittwoch h2,
-.intro-information .mittwoch h3,
-.intro-information .mittwoch p,
-.intro-information .mittwoch a,
-.intro-information .payment h2,
-.intro-information .payment h3,
-.intro-information .payment p,
-.intro-information .payment a {
-  color: black;
+  border-top: 1px solid #e6e6e6;
 }
 
 .intro-information .mittwoch h2 a:hover,
@@ -322,7 +311,7 @@ html {
 @media screen and (max-width: 860px) {
   .intro-information .mittwoch,
   .intro-information .age {
-    background: #e2e2e2;
+    background: #f4f4f4;
   }
   .intro-information .mittwoch h2,
   .intro-information .mittwoch h3,
@@ -445,37 +434,17 @@ footer .social img:hover {
   .intro-information .donnerstag {
     padding: 1.5rem;
   }
-  .intro-information .mittwoch h2,
-  .intro-information .payment h2,
-  .intro-information .age h2,
-  .intro-information .donnerstag h2 {
-    font-size: 1.8rem;
-  }
-  .intro-information .mittwoch h2 span,
-  .intro-information .payment h2 span,
-  .intro-information .age h2 span,
-  .intro-information .donnerstag h2 span {
-    font-size: 1.8rem;
-  }
   .intro-information .mittwoch h3,
   .intro-information .payment h3,
   .intro-information .age h3,
   .intro-information .donnerstag h3 {
-    font-size: 1.8rem;
     padding-top: 5px;
   }
   .intro-information .mittwoch p,
   .intro-information .payment p,
   .intro-information .age p,
   .intro-information .donnerstag p {
-    font-size: 1.6rem;
     padding-top: 5px;
-  }
-  .intro-information .mittwoch a,
-  .intro-information .payment a,
-  .intro-information .age a,
-  .intro-information .donnerstag a {
-    font-size: 1.6rem;
   }
 }
 
@@ -510,7 +479,7 @@ footer .social img:hover {
 }
 
 .about-text p {
-  font-size: 2rem;
+  font-size: calc(12px + 0.5vw);
 }
 
 .about-image {
@@ -519,7 +488,7 @@ footer .social img:hover {
   height: 50rem;
   margin: 1rem 2rem 0rem 0rem;
   float: left;
-  background: url("./images/janasea1.jpeg");
+  background: url("./images/janasea1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -535,8 +504,8 @@ footer .social img:hover {
           transform: translateX(91%);
   -webkit-transition: 0.4s all ease;
   transition: 0.4s all ease;
-  background: url("./images/janasea3.jpeg");
-  background-position: center;
+  background: url("./images/janasea3.jpg");
+  background-position-x: 40%;
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -575,13 +544,11 @@ footer .social img:hover {
 .about-image .img-active {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
 }
 
 .about-image .arrow-active {
-  -webkit-transform: rotate(-160deg);
-          transform: rotate(-160deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
   margin-left: auto;
 }
 
@@ -619,13 +586,12 @@ footer .social img:hover {
     padding: 0;
   }
   .about-text p {
-    font-size: 1.8rem;
     padding: 0 2rem;
   }
 }
 
 .contact-section {
-  min-height: 90vh;
+  min-height: 93vh;
   max-width: 1600px;
   background: url("./images/group-hands.jpeg");
   background-size: cover;
@@ -1053,7 +1019,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 10vh;
+  min-height: 7vh;
   max-width: 1600px;
   font-family: "Open Sans", sans-serif;
   position: relative;
@@ -1094,19 +1060,20 @@ nav {
 }
 
 .nav-links a {
-  color: #e2e2e2;
+  color: gainsboro;
   text-decoration: none;
-  letter-spacing: 0.3rem;
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-size: calc(12px + 0.2vw);
 }
 
 .nav-links a:hover {
-  color: #e4a929;
+  color: #e3e3e3;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-color: #e3e3e3;
 }
 
 a.active {
-  border-bottom: 2px solid white;
+  border-bottom: 1.5px solid gainsboro;
 }
 
 .burger {
@@ -1137,7 +1104,7 @@ a.active {
   .contact,
   .video-section,
   .booking-section {
-    margin-top: 10vh;
+    margin-top: 7vh;
   }
   nav {
     position: fixed;
@@ -1146,13 +1113,13 @@ a.active {
   }
   .topOfPage,
   .nav-div {
-    min-height: 10vh;
+    min-height: 7vh;
   }
   .nav-links {
     position: absolute;
     right: 0;
-    top: 10vh;
-    height: 90vh;
+    top: 7vh;
+    height: 93vh;
     padding-bottom: 5vh;
     background: #171717;
     display: -webkit-box;
@@ -1196,7 +1163,7 @@ a.active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
     position: fixed;
-    top: 10vh;
+    top: 7vh;
   }
   @-webkit-keyframes navLinkFade {
     from {

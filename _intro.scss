@@ -1,11 +1,15 @@
-html {
-  background: rgba(159, 159, 159, 0.5);
+// html {
+//   background: rgba(159, 159, 159, 0.5);
+// }
+
+#website {
+  background-color: #e6e6e6;
 }
 
 .intro {
   max-width: 1300px;
   margin: auto;
-  min-height: 60vh;  
+  min-height: 60vh;
   max-height: 78vh;
   display: flex;
   position: relative;
@@ -25,7 +29,8 @@ html {
       left: 0;
       color: white;
       background: black;
-      font-size: 1.2rem;
+      // font-size: 1.2rem;
+      font-size: $p2-graph;
       padding: 0 1rem;
       border-top-right-radius: 1rem;
       letter-spacing: 1px;
@@ -46,7 +51,7 @@ html {
 
     .intro-arrow {
       display: inline-block;
-      background: linear-gradient(50deg, orange 20%, white);
+      background: linear-gradient(50deg, $mainColor 75%, white);
       border-right: 1.5px solid white;
       border-bottom: 1.5px solid white;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -54,9 +59,9 @@ html {
       border-bottom-right-radius: 100%;
       width: 3rem;
       height: 3rem;
-      cursor: pointer;  
+      cursor: pointer;
     }
-    
+
     i {
       margin: 3px;
       width: 10px;
@@ -70,7 +75,7 @@ html {
     p {
       color: white;
       background: black;
-      font-size: 1.2rem;
+      font-size: $p2-graph;
       padding: 0 1rem;
       border-top-left-radius: 1rem;
       letter-spacing: 1px;
@@ -84,18 +89,12 @@ html {
   .dancegroup2-active {
     transform: translate(0%, 0%);
   }
-
 }
 
-// .intro-arrow-active {
-//   padding-left: 2rem;
-//   color: red;
-// }
 
 .intro-heading {
   display: flex;
   height: 13vh;
-  background: rgba(0, 0, 0, 0.08);
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
@@ -110,7 +109,7 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 4.5rem; 
+    font-size: 4.5rem;
     font-family: "Anton", sans-serif;
     color: $mainColor;
     text-shadow: 2px 4px 1px rgb(0, 0, 0), 2px 4px 5px rgb(0, 0, 0),
@@ -125,12 +124,12 @@ html {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   background: rgb(255, 255, 255);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   max-width: 1300px;
   margin: auto;
 
   a {
-    color: rgb(0, 0, 0);
+    color: rgb(21, 21, 21);
 
     &:hover {
       color: rgb(25, 25, 240);
@@ -139,22 +138,22 @@ html {
 
   h2 {
     color: rgb(0, 0, 0);
-    font-size: 2.3rem;
+    font-size: $h2-text;
     line-height: 25px;
 
     span {
-      font-size: 2.3rem;
       color: $mainColor;
-      text-shadow: 0.5px 0.5px black;
+      text-shadow: 0.2px 0.2px black;
     }
   }
+  p {
+    font-size: $p-graph;
+    color: rgb(21, 21, 21);
+  }
 
-  p,
   h3 {
-    font-size: 2rem;
     color: rgb(0, 0, 0);
     font-weight: normal;
-    line-height: 2.5rem;
     padding: 1rem 0;
   }
 
@@ -165,29 +164,27 @@ html {
     display: grid;
     justify-items: center;
     align-items: center;
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
-    background-color: rgb(239, 239, 239);
-     span {
-       color: #eea301;
-       text-shadow: 0.5px 0.5px black;
-     }
+    span {
+      color: #eea301;
+      text-shadow: 0.2px 0.2px rgb(0, 0, 0);
+    }
   }
 
-
-  .donnerstag, .age{
-    border-top: 1px solid black;
+  .donnerstag,
+  .age {
+    border-top: 1px solid rgb(230, 230, 230);
   }
-  
+
   .mittwoch,
   .payment {
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(230, 230, 230);
 
     h2,
     h3,
     p,
     a {
-      color: black;
 
       a:hover {
         color: rgb(25, 25, 240);
@@ -196,10 +193,9 @@ html {
   }
 
   @media screen and (max-width: 860px) {
-
     .mittwoch,
     .age {
-      background: rgb(226, 226, 226);
+      background: rgb(244, 244, 244);
 
       h2,
       h3,
@@ -249,7 +245,6 @@ footer {
   }
 
   .social {
-
     img {
       transition: all 0.3s ease;
       max-width: 28px;
@@ -295,41 +290,25 @@ footer {
       background: none;
 
       .heading {
-        background: rgba(0, 0, 0, 0); 
+        background: rgba(0, 0, 0, 0);
         font-size: 4rem;
-        padding: 0.5rem; 
+        padding: 0.5rem;
       }
     }
 
     .intro-information {
-
       .mittwoch,
       .payment,
       .age,
       .donnerstag {
         padding: 1.5rem;
 
-        h2 {
-          font-size: 1.8rem;
-
-          span {
-            font-size: 1.8rem;
-
-          }
-        }
-
         h3 {
-          font-size: 1.8rem;
-          padding-top: 5px;
-        }
-        
-        p {
-          font-size: 1.6rem;
           padding-top: 5px;
         }
 
-        a {
-          font-size: 1.6rem;
+        p {
+          padding-top: 5px;
         }
       }
     }

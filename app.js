@@ -3,7 +3,7 @@ if (
   navigator.userAgent.indexOf("MSIE") !== -1 ||
   navigator.appVersion.indexOf("Trident/") > -1
 ) {
-  console.log("this is IE");
+  // console.log("this is IE");
   /* Microsoft Internet Explorer detected in. */
   const popup = document.querySelector("#popup");
   const website = document.querySelector("#website");
@@ -12,7 +12,7 @@ if (
   popup.classList.add("show-popup");
   website.style.display = "none";
 } else {
-  console.log("this is not IE");
+  // console.log("this is not IE");
   // Mobile navbar
   const navSlide = function () {
     const burger = document.querySelector(".burger");

@@ -7,7 +7,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  // min-height: 10vh;
+  min-height: 7vh;
   max-width: 1600px;
   font-family: "Open Sans", sans-serif;
   position: relative;
@@ -39,19 +40,22 @@ nav {
 }
 
 .nav-links a {
-  color: rgb(226, 226, 226);
+  color: rgb(220, 220, 220);
   text-decoration: none;
-  letter-spacing: 0.3rem;
-  font-weight: bold;
-  font-size: 1.5rem;
+  // letter-spacing: 0.3rem;
+  // font-weight: bold;
+  // font-size: 1.5rem;
+  font-size: $navbar-text;
 
   &:hover {
-    color: $mainColor;
+    color: rgb(227, 227, 227);
+    transition: all 0.2s ease;
+    border-color: rgb(227, 227, 227);
   }
 }
 
 a.active {
-  border-bottom: 2px solid white;
+  border-bottom: 1.5px solid rgb(220, 220, 220);
 }
 
 .burger {
@@ -72,8 +76,7 @@ a.active {
   background: none;
 }
 
-
-@media screen and (max-width:860px) {
+@media screen and (max-width: 860px) {
   body {
     overflow-x: hidden;
   }
@@ -83,7 +86,7 @@ a.active {
   .contact,
   .video-section,
   .booking-section {
-    margin-top: 10vh;
+    margin-top: 7vh;
   }
 
   nav {
@@ -94,14 +97,15 @@ a.active {
 
   .topOfPage,
   .nav-div {
-    min-height: 10vh;
+    // min-height: 10vh;
+    min-height: 7vh;
   }
 
   .nav-links {
     position: absolute;
     right: 0;
-    top: 10vh;
-    height: 90vh;
+    top: 7vh;
+    height: 93vh;
     padding-bottom: 5vh;
     background: #171717;
     display: flex;
@@ -136,7 +140,7 @@ a.active {
   .nav-active {
     transform: translateX(0%);
     position: fixed;
-    top: 10vh;
+    top: 7vh;
   }
 
   @keyframes navLinkFade {
