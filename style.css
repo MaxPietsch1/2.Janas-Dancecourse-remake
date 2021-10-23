@@ -1007,6 +1007,7 @@ footer .social img:hover {
 
 header {
   background: #171717;
+  width: 100%;
 }
 
 nav {
@@ -1203,6 +1204,71 @@ a.active {
 .toggle .line3 {
   -webkit-transform: rotate(45deg) translate(-0.5rem, -0.6rem);
           transform: rotate(45deg) translate(-0.5rem, -0.6rem);
+}
+
+.body-impressum {
+  height: 100vh;
+  background-color: #3f3f3f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.logo-impressum {
+  min-width: 100vw;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.logo-impressum .logo-img {
+  min-width: 100px;
+  max-width: 250px;
+}
+
+.logo-impressum h2 {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  font-size: calc(1rem + 0.5vw);
+}
+
+.impressum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding-bottom: 18px;
+}
+
+.impressum h1 {
+  text-align: center;
+  font-size: calc(3rem + 0.5vw);
+  padding-bottom: 25px;
+}
+
+.impressum h2 {
+  font-size: calc(1.2rem + 0.5vw);
+  font-weight: 400;
+}
+
+.impressum p {
+  font-size: calc(1.2rem + 0.5vw);
+  font-weight: 100;
+  padding-bottom: 3px;
+  font-family: "Poppins", sans-serif;
 }
 
 @media screen and (min-width: 310px) {
