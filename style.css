@@ -736,27 +736,12 @@ footer .social img:hover {
 }
 
 .image-background {
-  text-align: end;
   padding-top: 6rem;
   background: black;
   color: #e4a929;
 }
 
-.image-background h4 {
-  margin: auto;
-  padding-right: 1rem;
-  font-size: 1.5rem;
-  max-width: 1300px;
-}
-
-.image-background h4 span {
-  font-size: 2rem;
-}
-
 .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 0rem 0 6rem 0rem;
   color: white;
   max-width: 1300px;
@@ -764,7 +749,7 @@ footer .social img:hover {
 }
 
 .image .image-header {
-  background: #202020;
+  padding: 1rem;
   color: #e4a929;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -776,34 +761,22 @@ footer .social img:hover {
       -ms-flex-pack: center;
           justify-content: center;
   min-width: 10rem;
-  border-right: 10px solid white;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
 }
 
-.image .image-boxes {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  border-right: 5px solid white;
+.image .image-box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.image .image-boxes .image-box1 {
-  overflow-y: hidden;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+.image .image-box1 .item {
+  width: 20%;
+  max-width: 100%;
 }
 
-.image .image-boxes .image-box1 .item {
-  min-width: 30rem;
-  max-width: 100rem;
-  max-height: 100%;
-}
-
-.image .image-boxes .image-box1 .item img {
+.image .image-box1 .item img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -812,7 +785,7 @@ footer .social img:hover {
   pointer-events: none;
 }
 
-.image .image-boxes .image-box1 .item .img-btn {
+.image .image-box1 .item .img-btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -827,10 +800,22 @@ footer .social img:hover {
   color: white;
 }
 
-.image .image-boxes .image-box1 .item .img-btn:hover {
+.image .image-box1 .item .img-btn:hover {
   background: white;
   color: black;
   border-color: black;
+}
+
+.video-gallery .video-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.video-gallery .video-container .video-item {
+  width: 20rem;
+  height: 10rem;
+  border: 1px solid white;
 }
 
 .enlarged {
@@ -841,7 +826,9 @@ footer .social img:hover {
           transform: translate(-50%, -50%);
   z-index: 21;
   border-radius: 5px;
-  max-height: 100%;
+  max-height: 100% !important;
+  width: 100% !important;
+  max-width: 40rem !important;
   margin: auto;
 }
 
